@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortApp</title>
+    <link rel="stylesheet" href="SortApp.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SortApp</h1>
+        <div class="input-section">
+            <label for="inputArray">Enter numbers (comma-separated):</label><br>
+            <input type="text" id="inputArray" placeholder="e.g. 5, 3, 8, 1">
+            <select id="sortMethod" required>
+                <option value="">Get-Option</option>
+                <option value="Min-Max">Min-Max</option>
+                <option value="Max-Min">Max-Min</option>
+            </select> <br><br>   
+            <button id="sortButton">Sort Data</button>
+            <button id="clearButton">Clear data</button>
+        </div>
+        <div class="output-section">
+            <h2>Sorted Array:</h2>
+            <p id="outputArray"></p>
+        </div>
+    </div>
+    <script src="SortApp.js"></script>
+</body>
+</html>
